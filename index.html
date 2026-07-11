@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EmpregaJá — Encontre a vaga ideal para sua carreira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="topo">
+  <div class="container header__inner">
+    <a href="#topo" class="logo">Emprega<span>Já</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#topo" class="nav__link">Início</a>
+      <a href="#vagas" class="nav__link">Vagas</a>
+      <a href="#empresas" class="nav__link">Empresas</a>
+      <a href="#cadastro" class="nav__link">Cadastrar Currículo</a>
+      <a href="#contato" class="nav__link">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">+ 5.000 vagas ativas agora</p>
+      <h1>Encontre a vaga ideal<br>para sua carreira!</h1>
+      <p class="hero__subtitle">Milhares de oportunidades esperando por você. Cadastre seu currículo e seja encontrado pelas melhores empresas do Pará.</p>
+      <div class="hero__actions">
+        <a href="#cadastro" class="btn btn--primary">Cadastrar Currículo</a>
+        <a href="#vagas" class="btn btn--ghost">Ver vagas abertas</a>
+      </div>
+    </div>
+
+    <div class="hero__panel" aria-hidden="true">
+      <div class="ticker">
+        <p class="ticker__label">Últimas vagas publicadas</p>
+        <ul class="ticker__list">
+          <li><span class="dot dot--remoto"></span>Desenvolvedor Web · Remoto</li>
+          <li><span class="dot dot--hibrido"></span>Analista de Sistemas · Híbrido</li>
+          <li><span class="dot dot--presencial"></span>Estagiário em TI · Presencial</li>
+          <li><span class="dot dot--remoto"></span>Designer UX · Remoto</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VAGAS EM DESTAQUE ===== -->
+<section class="section" id="vagas">
+  <div class="container">
+    <span class="section__eyebrow">Vagas em destaque</span>
+    <h2 class="section__title">Oportunidades selecionadas para você</h2>
+
+    <div class="cards" id="cardsGrid">
+      <article class="card" data-area="tecnologia">
+        <div class="card__top">
+          <h3>Desenvolvedor Front-end</h3>
+          <span class="badge badge--remoto">Remoto</span>
+        </div>
+        <p class="card__company">Tech Solutions</p>
+        <p class="card__meta">📍 Belém &nbsp;·&nbsp; 💰 R$ 4.500</p>
+        <a href="#cadastro" class="btn btn--small">Candidatar-se</a>
+      </article>
+
+      <article class="card" data-area="tecnologia">
+        <div class="card__top">
+          <h3>Analista de Sistemas</h3>
+          <span class="badge badge--hibrido">Híbrido</span>
+        </div>
+        <p class="card__company">InfoTech</p>
+        <p class="card__meta">📍 Castanhal &nbsp;·&nbsp; 💰 R$ 5.200</p>
+        <a href="#cadastro" class="btn btn--small">Candidatar-se</a>
+      </article>
+
+      <article class="card" data-area="tecnologia">
+        <div class="card__top">
+          <h3>Técnico em Informática</h3>
+          <span class="badge badge--presencial">Presencial</span>
+        </div>
+        <p class="card__company">SoftDev</p>
+        <p class="card__meta">📍 Capitão Poço &nbsp;·&nbsp; 💰 R$ 1.800</p>
+        <a href="#cadastro" class="btn btn--small">Candidatar-se</a>
+      </article>
+
+      <article class="card" data-area="administrativo">
+        <div class="card__top">
+          <h3>Assistente Administrativo</h3>
+          <span class="badge badge--presencial">Presencial</span>
+        </div>
+        <p class="card__company">Grupo Amazônia</p>
+        <p class="card__meta">📍 Belém &nbsp;·&nbsp; 💰 R$ 2.100</p>
+        <a href="#cadastro" class="btn btn--small">Candidatar-se</a>
+      </article>
+
+      <article class="card" data-area="design">
+        <div class="card__top">
+          <h3>Designer Gráfico</h3>
+          <span class="badge badge--remoto">Remoto</span>
+        </div>
+        <p class="card__company">Criativa</p>
+        <p class="card__meta">📍 Belém &nbsp;·&nbsp; 💰 R$ 3.800</p>
+        <a href="#cadastro" class="btn btn--small">Candidatar-se</a>
+      </article>
+
+      <article class="card" data-area="tecnologia">
+        <div class="card__top">
+          <h3>Estágio em TI</h3>
+          <span class="badge badge--presencial">Presencial</span>
+        </div>
+        <p class="card__company">SoftDev</p>
+        <p class="card__meta">📍 Capitão Poço &nbsp;·&nbsp; 💰 R$ 1.200</p>
+        <a href="#cadastro" class="btn btn--small">Candidatar-se</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TABELA DE VAGAS + BUSCA ===== -->
+<section class="section section--alt" id="empresas">
+  <div class="container">
+    <span class="section__eyebrow">Todas as vagas</span>
+    <h2 class="section__title">Busque por área de atuação</h2>
+
+    <div class="search-bar">
+      <label for="buscaArea" class="sr-only">Buscar por área de atuação</label>
+      <input type="text" id="buscaArea" placeholder="Ex.: tecnologia, design, administrativo...">
+      <button type="button" id="btnLimparBusca" class="btn btn--ghost btn--small">Limpar</button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="tabela-vagas" id="tabelaVagas">
+        <thead>
+          <tr>
+            <th>Cargo</th>
+            <th>Empresa</th>
+            <th>Cidade</th>
+            <th>Salário</th>
+            <th>Modalidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-area="tecnologia">
+            <td data-label="Cargo">Desenvolvedor Web</td>
+            <td data-label="Empresa">Tech Solutions</td>
+            <td data-label="Cidade">Belém</td>
+            <td data-label="Salário">R$ 4.500</td>
+            <td data-label="Modalidade"><span class="badge badge--remoto">Remoto</span></td>
+          </tr>
+          <tr data-area="tecnologia">
+            <td data-label="Cargo">Analista de Sistemas</td>
+            <td data-label="Empresa">InfoTech</td>
+            <td data-label="Cidade">Castanhal</td>
+            <td data-label="Salário">R$ 5.200</td>
+            <td data-label="Modalidade"><span class="badge badge--hibrido">Híbrido</span></td>
+          </tr>
+          <tr data-area="tecnologia">
+            <td data-label="Cargo">Estagiário TI</td>
+            <td data-label="Empresa">SoftDev</td>
+            <td data-label="Cidade">Capitão Poço</td>
+            <td data-label="Salário">R$ 1.200</td>
+            <td data-label="Modalidade"><span class="badge badge--presencial">Presencial</span></td>
+          </tr>
+          <tr data-area="design">
+            <td data-label="Cargo">Designer UX</td>
+            <td data-label="Empresa">Criativa</td>
+            <td data-label="Cidade">Belém</td>
+            <td data-label="Salário">R$ 3.800</td>
+            <td data-label="Modalidade"><span class="badge badge--remoto">Remoto</span></td>
+          </tr>
+          <tr data-area="administrativo">
+            <td data-label="Cargo">Assistente Administrativo</td>
+            <td data-label="Empresa">Grupo Amazônia</td>
+            <td data-label="Cidade">Belém</td>
+            <td data-label="Salário">R$ 2.100</td>
+            <td data-label="Modalidade"><span class="badge badge--presencial">Presencial</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="table-empty" id="tabelaVazia" hidden>Nenhuma vaga encontrada para essa área.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORMULÁRIO DE CADASTRO ===== -->
+<section class="section" id="cadastro">
+  <div class="container container--narrow">
+    <span class="section__eyebrow">Cadastro</span>
+    <h2 class="section__title">Envie seu currículo e concorra às vagas</h2>
+    <p class="section__desc">Preencha o formulário abaixo. Os campos marcados com * são obrigatórios.</p>
+
+    <form id="formCadastro" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+          <span class="error-msg" id="err-nome"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" placeholder="voce@email.com">
+          <span class="error-msg" id="err-email"></span>
+        </div>
+
+        <div class="field">
+          <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(91) 90000-0000">
+          <span class="error-msg" id="err-telefone"></span>
+        </div>
+
+        <div class="field">
+          <label for="cidade">Cidade *</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Sua cidade">
+          <span class="error-msg" id="err-cidade"></span>
+        </div>
+
+        <div class="field">
+          <label for="cargo">Cargo de interesse *</label>
+          <select id="cargo" name="cargo">
+            <option value="">Selecione...</option>
+            <option value="Desenvolvedor Front-end">Desenvolvedor Front-end</option>
+            <option value="Analista de Sistemas">Analista de Sistemas</option>
+            <option value="Técnico em Informática">Técnico em Informática</option>
+            <option value="Assistente Administrativo">Assistente Administrativo</option>
+            <option value="Designer Gráfico">Designer Gráfico</option>
+            <option value="Estágio em TI">Estágio em TI</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <span class="error-msg" id="err-cargo"></span>
+        </div>
+
+        <div class="field">
+          <label for="escolaridade">Escolaridade *</label>
+          <select id="escolaridade" name="escolaridade">
+            <option value="">Selecione...</option>
+            <option value="Ensino Médio">Ensino Médio</option>
+            <option value="Ensino Técnico">Ensino Técnico</option>
+            <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+            <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+            <option value="Pós-graduação">Pós-graduação</option>
+          </select>
+          <span class="error-msg" id="err-escolaridade"></span>
+        </div>
+
+        <div class="field field--full">
+          <label for="curriculo">Upload do currículo (opcional)</label>
+          <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx">
+        </div>
+
+        <div class="field field--full">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre você (opcional)"></textarea>
+        </div>
+
+        <div class="field field--full field--checkbox">
+          <input type="checkbox" id="termos" name="termos">
+          <label for="termos">Aceito os termos e a política de privacidade *</label>
+          <span class="error-msg" id="err-termos"></span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--full">Enviar Cadastro</button>
+
+      <p class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== DIFERENCIAIS ===== -->
+<section class="section section--dark">
+  <div class="container">
+    <span class="section__eyebrow">Diferenciais</span>
+    <h2 class="section__title">Por que usar a EmpregaJá?</h2>
+
+    <div class="diferenciais">
+      <div class="diferencial">
+        <span class="diferencial__icon">✔</span>
+        <p>Mais de 5.000 vagas</p>
+      </div>
+      <div class="diferencial">
+        <span class="diferencial__icon">✔</span>
+        <p>Cadastro gratuito</p>
+      </div>
+      <div class="diferencial">
+        <span class="diferencial__icon">✔</span>
+        <p>Empresas parceiras</p>
+      </div>
+      <div class="diferencial">
+        <span class="diferencial__icon">✔</span>
+        <p>Processo seletivo rápido</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="section">
+  <div class="container">
+    <span class="section__eyebrow">Depoimentos</span>
+    <h2 class="section__title">Quem já conseguiu, indica</h2>
+
+    <div class="depoimentos">
+      <blockquote class="depoimento">
+        <p>“Consegui meu primeiro emprego em apenas duas semanas!”</p>
+        <cite>— Maria Silva</cite>
+      </blockquote>
+      <blockquote class="depoimento">
+        <p>“Encontrei uma vaga híbrida perto de casa em poucos dias.”</p>
+        <cite>— João Pereira</cite>
+      </blockquote>
+      <blockquote class="depoimento">
+        <p>“O processo de candidatura é rápido e muito simples.”</p>
+        <cite>— Ana Costa</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="footer" id="contato">
+  <div class="container footer__inner">
+    <div>
+      <p class="logo logo--footer">Emprega<span>Já</span></p>
+      <p class="footer__text">Conectando talentos às melhores oportunidades do Pará.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contato</h4>
+      <p>📞 (91) 3000-0000</p>
+      <p>✉️ contato@empregaja.com.br</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Redes sociais</h4>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 EmpregaJá. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
